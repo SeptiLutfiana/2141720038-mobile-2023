@@ -1,3 +1,10 @@
+# Pemrograman Mobile 
+
+- **Nama:** Septi Lutfiana
+- **NIM:** 2141720038
+- **Kelas:** TI-3H
+- **No Absen:** 24
+
 # soal 2 
 # Mengapa sangat penting untuk memahami bahasa pemrograman Dart sebelum kita menggunakan framework Flutter ? Jelaskan!
 # Jawab
