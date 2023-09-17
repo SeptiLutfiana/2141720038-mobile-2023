@@ -1,11 +1,8 @@
 void main() {
-  int index; // pembenaran
-  index = 15;
-
   // langkah 3
-  for (index = 10; index < 27; index++) { // pembenaran 
+  for (int index = 10; index < 27; index++) { // pembenaran 
   if (index == 21) break;
-  else if (index > 1 || index < 7) continue;
+  else if (index > 13 || index < 15) continue;
   print(index);
 }
 }

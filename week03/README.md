@@ -1,14 +1,22 @@
++----+---------------------------------------+
+
+SEPTI LUTFIANA 
+| 2141720038                                 |
+
++----+----------------------------------------+
 # Praktikum 1 
 # Langkah 2
 
 Pada langkah 2 saat di run tidak eror, tertampil nilai Test2 dan Test2 Again. Pada Dart dapat melakukan pemeriksaan dua variable dengan menggunakan double "==" untuk membandingkan nilai sekaligus tide datanya
 (Dokumentasi pada file praktikum1_langkah2.JPG)
 
+![](docs/praktikum1_langkah2.JPG)
+
 # Langkah 3
 
 Pada saat melakukan running pada praktikum 1 langkah 3, terjadi eror hal ini dikarenakan deklrasi variabel test saat kode sebelumnya bertype data String lalu pada langkah ke 3 bertype var, hal inilah yang menyebabkan eror dikarenakan pemanggilan type data yang berbeda pada satu nama variable yang sama.
 
-(Dokumentasi pada file praktikum1_langkah3.JPG)
+![](docs/praktikum1_langkah3.JPG)
 
 * Pembenaran Kode Program pada langkah 3
 
@@ -28,16 +36,16 @@ Test2 again
 
 Kebenaran
 
-(Dokumentasi pada file praktikum1_langkah3_Pembenaran.JPG)
+![](docs/praktikum1_langkah3_Pembenaran.JPG)
 
 # Praktikum 2
 # Langkah 2
 
-(Dokumentasi pada file praktikum2_langkah2.JPG)
+![Praktikum2_Langkah2](docs/praktikum2_langkah2.JPG)
 
 pada langkah ke 2 ini, saat kode di eksekusi muncul eror, hal ini dikarenakan varibale dengan nama "counter" belum di deklarasi dan diinisialisasi pada fungsi main ini, sehingga saat di running nama variable "counter" tidak bisa di baca dan menyebabkan eror. Agar bisa di running maka perlu di ubah pada kode programnya seperti ini
 
-(Dokumentasi pada file docs/praktikum2_langkah2_Pembenaran.JPG)
+![Praktikum2_Langkah2_Pembenaran](docs/praktikum2_langkah2_Pembenaran.JPG)
  
  - void main(){
   
@@ -62,13 +70,13 @@ terprint data dari angka 10 - 33
 
 # Langkah 2
 
-(Dokumentasi pada file docs/praktikum3_Langkah2.JPG)
+![Praktikum3_Langkah2](docs/praktikum3_Langkah2.JPG)
 
 pada langkah ke 2 ini, saat kode di eksekusi muncul eror, hal ini dikarenakan varibale dengan nama "Index" belum di deklarasi dan diinisialisasi pada fungsi main ini, sehingga saat di running nama variable "Index" tidak bisa di baca dan menyebabkan eror. 
 
 Selain itu juga terdapat perbedaan pemanggilan variabel yang digunakan untuk perulangan for yang menyebabkan eror dan juga ekspresen pada variable indek tidak dijalankan increment ataupun ekskrement. Agar bisa di running maka perlu di ubah pada kode programnya seperti berikut,
 
-(Dokumentasi pada file docs/praktikum3_Langkah2_Pembenaran.JPG)
+![Praktikum3_Langkah2_Pembenaran](docs/praktikum3_Langkah2_Pembenaran.JPG)
 - Kode Program
 
 void main() {
@@ -91,5 +99,12 @@ setelah di lakukan pembenaran pada kode program langkah 2, saat dilakukan runnin
 
 # Langkah 3
 Pada Langkah 3 ini saat di running muncul eror dikarenakan saat menuliskan atau mendeklarasikan variabel atau function pada kode program berbeda sehingga compailer saat melakukan running bingung atau tidak bisa membacanya.
+![Praktikum3_Langkah3_Pembenaran](docs/Praktikum3_Langkah3_Pembenaran.JPG)
+
+## TUGAS PRAKTIKUM 
+
+![Tugas_Praktikum](docs/praktikum1_langkah2.JPG)
+
+Dalam kode tersebut, menggunakan list primeNumbers untuk menyimpan bilangan prima yang ditemukan. Setelah selesai mencari bilangan prima, dilanjutkan menggunakan metode join untuk menggabungkan elemen-elemen dalam list menjadi satu string yang dipisahkan oleh koma dan spasi. Kemudian, kita mencetak string tersebut dalam satu baris menggunakan print.
 
 
