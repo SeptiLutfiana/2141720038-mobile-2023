@@ -41,11 +41,11 @@ Kebenaran
 # Praktikum 2
 # Langkah 2
 
-![](docs/praktikum2_langkah2.JPG)
+![](docs/Praktikum2_Langkah2.JPG)
 
 pada langkah ke 2 ini, saat kode di eksekusi muncul eror, hal ini dikarenakan varibale dengan nama "counter" belum di deklarasi dan diinisialisasi pada fungsi main ini, sehingga saat di running nama variable "counter" tidak bisa di baca dan menyebabkan eror. Agar bisa di running maka perlu di ubah pada kode programnya seperti ini
 
-![](docs/praktikum2_langkah2_Pembenaran.JPG)
+![](docs/Praktikum2_Langkah2_Pembenaran.JPG)
  
  - void main(){
   
@@ -106,5 +106,3 @@ Pada Langkah 3 ini saat di running muncul eror dikarenakan saat menuliskan atau 
 ![](docs/Tugas_Praktikum.JPG)
 
 Dalam kode tersebut, menggunakan list primeNumbers untuk menyimpan bilangan prima yang ditemukan. Setelah selesai mencari bilangan prima, dilanjutkan menggunakan metode join untuk menggabungkan elemen-elemen dalam list menjadi satu string yang dipisahkan oleh koma dan spasi. Kemudian, kita mencetak string tersebut dalam satu baris menggunakan print.
-
-
