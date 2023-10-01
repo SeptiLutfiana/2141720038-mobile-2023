@@ -1,6 +1,7 @@
 # Nama Septi Lutfiana
 # NIM 2141720038
 
+# 1. PENJELASAN LAPORAN PRAKLTIKUM
 # PRAKTIKUM 1
 ### LANGKAH 1
 Ketik atau salin kode program berikut ke dalam void main().
@@ -162,4 +163,137 @@ Terjadi eror, karena belum melakukan inisialisasi kelas login
 ![](docs/Parktikum4_Langkah6.JPG)
 
 
-Collection for (atau sering disebut foreach) adalah salah satu konsep dalam pemrograman yang memungkinkan untuk melakukan iterasi atau melintasi elemen-elemen dalam suatu koleksi data (seperti array, list, set, map, dll.) dengan cara yang lebih efisien dan mudah dibaca
+Collection for (atau sering disebut foreach) adalah salah satu konsep dalam pemrograman yang memungkinkan untuk melakukan iterasi atau melintasi elemen-elemen dalam suatu koleksi data (seperti array, list, set, map, dll.) dengan cara yang lebih efisien dan mudah dibaca.
+
+
+## PRAKTIKUM 5
+### LANGKAH 1
+### LANGKAH 2
+![](docs/Parktikum5_Langkah1.JPG)
+terjadi eror dikarenakan setelah perintah print perlu ditambahkan semi kolon (;).
+
+- pembenahan
+![](docs/Praktikum5_Langkah1_pembenahan.JPG)
+- penjelasan
+saat kode tersebut dijalankan akan menghasilkan 
+output seperti gambar, dimana akan di print nilai first, last a: 2, b: true.
+
+ variabel record berisi campuran elemen string dan pasangan key-value.
+
+ ### LANGKAH 3
+ ![](docs/Praktikum5_Langkah3.JPG)
+ hasilnya tidak ada perubahan dari kode sebelumnya pada langkah 2
+ - pembenahan
+
+ ![](docs/Praktikum5_Langkah3_pembenahan.JPG)
+
+ Output pertama mencetak nilai record yang asli, yaitu ('first', a: 2, b: true, 'last'). Output kedua mencetak hasil pertukaran nilai dari pemanggilan fungsi tukar(), yaitu (3, 2).
+
+### Langkah 4
+![](docs/Praktikum5_Langkah4.JPG)
+
+terjadi eror karena variable bersifat non null variable, sehingga saat di akan terjadi eror.
+
+- pembenahan
+![](docs/Praktikum5_Langkah4_Pembenahan.JPG)
+
+Menambahkan inisialisasi nilai pada variabel mahasiswa dengan nilai ('Septi Lutfiana, 2141720038) nama dan nim nahasiswa.
+
+### LANGKAH 5
+![](docs/Praktikum5_Langkah5.JPG)
+- penjelasan
+Output pertama hingga ketiga adalah output yang sama seperti sebelumnya. Output keempat hingga terakhir mencetak nilai-nilai dari variabel mahasiswa2 sesuai dengan pencetakannya:
+
+print(mahasiswa2.$1); mencetak nilai 'first'.
+print(mahasiswa2.a); mencetak nilai 2.
+print(mahasiswa2.b); mencetak nilai true.
+print(mahasiswa2.$2); mencetak nilai 'last'.
+
+- Penambahan NIM dan Nama
+![](docs/Praktikum5_Langkah5_Penambahan%20NIM.JPG)
+terdapat perubahan yaitu penambahan nama dan nim.
+
+
+# 2. Jelaskan yang dimaksud Functions dalam bahasa Dart!
+
+- Jawab
+Dalam bahasa Dart, Functions (fungsi) adalah blok kode yang dapat menerima argumen, melakukan operasi, dan mengembalikan nilai. Fungsi digunakan untuk mengorganisir dan mengelompokkan kode menjadi unit yang dapat digunakan dan dipanggil secara berulang.
+
+# 3. Jelaskan jenis-jenis parameter di Functions beserta contoh sintaksnya!
+
+- jawab
+Dalam bahasa Dart, terdapat dua jenis parameter yang dapat digunakan dalam deklarasi fungsi, yaitu parameter posisi (positional parameter) dan parameter bernama (named parameter).
+
+Parameter Posisi (Positional Parameter):
+
+- Parameter posisi adalah parameter yang dideklarasikan berdasarkan urutan posisinya saat memanggil fungsi.
+- Argumen yang dikirimkan saat memanggil fungsi akan diteruskan ke parameter posisi sesuai dengan urutan posisinya.
+- Parameter posisi bersifat wajib diisi saat memanggil fungsi, kecuali jika ada nilai default yang ditentukan.
+- Contoh sintaks:
+![](docs/Tugas3.JPG)
+
+- Parameter Bernama (Named Parameter):
+
+- Parameter bernama adalah parameter yang dideklarasikan dengan menggunakan sintaks nama_parameter: nilai.
+- Ketika memanggil fungsi, argumen dikirimkan dengan menyebutkan nama parameternya, diikuti dengan tanda titik dua (:) dan nilai yang ingin diteruskan.
+Penggunaan parameter bernama bersifat opsional dan dapat diabaikan saat memanggil fungsi jika ada nilai default yang ditentukan.
+
+Contoh sintaks:
+![](docs/Tugas3-1.JPG)
+
+# 4. Jelaskan maksud Functions sebagai first-class objects beserta contoh sintaknya!
+
+- jawaban
+
+Dalam bahasa pemrograman, konsep "first-class objects" (objek kelas satu) mengacu pada kemampuan untuk memperlakukan fungsi sebagai nilai yang dapat disimpan dalam variabel, dilewatkan sebagai argumen ke fungsi lain, dan dikembalikan sebagai nilai dari fungsi lain. Dalam konteks ini, fungsi diperlakukan seperti objek lainnya dalam bahasa tersebut.
+
+- contoh sintak
+![](docs/Tugas4.JPG)
+
+# 5. Apa itu Anonymous Functions? Jelaskan dan berikan contohnya!
+
+- jawab
+Anonymous functions, juga dikenal sebagai lambda functions atau function literals, adalah fungsi yang tidak memiliki nama.
+
+- KODE
+![](docs/Tugas5.JPG)
+
+- penjelasan
+
+tanda kurung kurawal {} dan kata kunci => untuk mendefinisikan anonymous function. Fungsi anonim tersebut menggandakan setiap elemen dalam list numbers dan mengembalikan hasilnya. Kemudian, metode toList() untuk mengonversi hasil iterable menjadi list, dan hasilnya dicetak menggunakan print().
+
+
+# 6. Jelaskan perbedaan Lexical scope dan Lexical closures! Berikan contohnya!
+
+
+- Jawab
+Lexical scope dan lexical closures adalah konsep penting dalam pemrograman yang terkait dengan pengaturan dan akses variabel dalam suatu lingkup.
+
+* Lexical Scope:
+Lexical scope (lingkup leksikal) mengacu pada cara variabel diikat (bound) dalam sebuah program berdasarkan tempat atau posisi di dalam kode.
+
+* code
+![](docs/Tugas6.JPG)
+
+- Lexical closures
+
+Lexical closures (penutup leksikal) adalah kombinasi antara fungsi dan lingkungan leksikal di mana fungsi tersebut didefinisikan. Closures memungkinkan fungsi untuk tetap memiliki akses ke variabel-variabel yang ada di lingkungan leksikal di mana fungsi tersebut didefinisikan, bahkan setelah lingkungan tersebut selesai dieksekusi.
+
+- kode
+![](docs/Tugas6-1.JPG)
+
+- kesimpulannya
+
+Jadi, perbedaan utama antara lexical scope dan lexical closures adalah bahwa lexical scope mengatur akses variabel berdasarkan struktur kode, sementara lexical closures memungkinkan fungsi untuk tetap memiliki akses ke variabel-variabel dalam lingkungan leksikal di mana fungsi tersebut didefinisikan, bahkan setelah lingkungan tersebut selesai dieksekusi.
+
+# 7. Jelaskan dengan contoh cara membuat return multiple value di Functions!
+
+
+- jawab
+
+Menggunakan List atau Array:
+![](docs/Tugas7.JPG)
+
+
+mengembalikan sebuah List atau Array yang berisi nilai-nilai yang ingin dikembalikan. Anda dapat menempatkan nilai-nilai tersebut ke dalam sebuah List atau Array, dan kemudian mengembalikan List atau Array tersebut dari fungsi.
+
