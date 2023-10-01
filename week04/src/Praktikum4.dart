@@ -12,6 +12,7 @@ var list4 = [2141720038, ...list];
 // langkah 4
 // var promoActive = true; //pembenahan dan nilai true
 var promoActive = false; //pembenahan dan nilai true
+// ignore: dead_code
 var nav = ['Home', 'Furniture', 'Plants', if (promoActive) 'Outlet'];
 
 

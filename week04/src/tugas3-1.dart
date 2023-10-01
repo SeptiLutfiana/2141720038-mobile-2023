@@ -1,11 +1,7 @@
 void printPerson(String firstName, String lastName, {int age = 0, String address = ''}) {
   print("Name: $firstName $lastName");
-  if (age != null) {
-    print("Age: $age");
-  }
-  if (address != null) {
-    print("Address: $address");
-  }
+  print("Age: $age");
+  print("Address: $address");
 }
 
 void main() {

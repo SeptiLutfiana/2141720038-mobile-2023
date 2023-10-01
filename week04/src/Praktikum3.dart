@@ -15,13 +15,11 @@ var nobleGases = {
   'nama' : 'Septi Lutfiana',
   'nim': 2141720038,
 };
-var mhs1 = Map<String, String>();
 gifts['first'] = 'partridge';
 gifts['second'] = 'turtledoves';
 gifts['fifth'] = 'golden rings';
 gifts['name'] = 'Septi Lutfiana';
 
-var mhs2 = Map<int, String>();
 nobleGases[2] = 'helium';
 nobleGases[10] = 'neon';
 nobleGases[18] = 'argon';
