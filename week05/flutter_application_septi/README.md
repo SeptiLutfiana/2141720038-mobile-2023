@@ -98,6 +98,12 @@ Contoh penggunaan TextField widget adalah sebagai berikut:
 ### hasil
 
 ![](images/HasilPrakLangkah4.mp4)
+
+
+<video width="320" height="260" controls>
+  <source src="images/HasilPrakLangkah4.mp4" type="video/mp4">
+</video>
+
 ![](images/HasilPrak4Lang4.jpeg)
 
 ## Langkah 5: Input dan Selection Widget
@@ -109,12 +115,26 @@ Contoh penggunaan TextField widget adalah sebagai berikut:
 
 ### hasil
 ![](images/HasilLangkah5.jpeg)
-![](images/HasilLangkah5.mp4)
 
+<video width="320" height="260" controls>
+  <source src="images/HasilLangkah5.mp4" type="video/mp4">
+</video>
 
 
 ## Langkah 6: Date and Time Pickers
 Date and Time Pickers termasuk pada kategori input dan selection widget, berikut adalah contoh penggunaan Date and Time Pickers
+![](images/Praktikum4Lang6.JPG)
+![](images/Praktikum4Lang6-1.JPG)
+![](images/Praktikum4Lang-2.JPG)
+
+### Hasil
+<video width="320" height="240" controls>
+  <source src="images/hasilLang6.mp4" type="video/mp4">
+</video>
+
+
+![](images/hasilLang6.mp4)
+![](images/HasilLangkah6.jpeg)
 
 
 
