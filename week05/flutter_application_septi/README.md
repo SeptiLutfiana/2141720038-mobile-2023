@@ -105,7 +105,16 @@ Contoh penggunaan TextField widget adalah sebagai berikut:
 Flutter menyediakan widget yang dapat menerima input dari pengguna aplikasi yaitu antara lain Checkbox, Date and Time Pickers, Radio Button, Slider, Switch, TextField.
 
 Contoh penggunaan TextField widget adalah sebagai berikut:
+![](images/Praktikum4Langkah5.JPG)
+
+### hasil
+![](images/HasilLangkah5.jpeg)
+![](images/HasilLangkah5.mp4)
+
+
 
 ## Langkah 6: Date and Time Pickers
 Date and Time Pickers termasuk pada kategori input dan selection widget, berikut adalah contoh penggunaan Date and Time Pickers
+
+
 
