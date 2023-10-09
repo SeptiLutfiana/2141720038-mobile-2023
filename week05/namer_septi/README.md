@@ -43,7 +43,7 @@ analysis_options.yaml
 Di bagian bawah lib/main.dart, tambahkan sesuatu pada string di objek Text pertama, dan simpan file tersebut
 
 kode
-
+![](images/Langkah6.PNG)
 hasil
 
 
