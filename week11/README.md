@@ -139,16 +139,47 @@ class _PlanScreenState extends State<PlanScreen> {
 
 ```
 
-### Hasil Langkah 1-9
 
-![](doc/hasil%20pertama.PNG)
-![](doc/HasilPraktikum1.PNG)
-
-### soal
+### Soal Praktikum 1
 2. Jelaskan maksud dari langkah 4 pada praktikum tersebut! Mengapa dilakukan demikian?
 
 - export 'plan.dart';: Ini mengekspor semua definisi yang ada dalam file 'plan.dart'. Ketika menggunakan file ini di file Dart lainnya, dapat mengakses kelas, fungsi, atau variabel yang didefinisikan di 'plan.dart'.
 
 - export 'task.dart';: Sama seperti sebelumnya, ini mengekspor semua definisi yang ada dalam file 'task.dart'. Dengan demikian, dapat menggunakan kelas, fungsi, atau variabel yang didefinisikan di 'task.dart' saat mengimpor file ini di tempat lain.
 
-# Praktikum 2
+3. Mengapa perlu variabel plan di langkah 6 pada praktikum tersebut? Mengapa dibuat konstanta ?
+
+- Menggunakan variabel dengan nama yang jelas (plan) dapat meningkatkan kejelasan kode. Jika variabel tersebut digunakan di beberapa bagian dalam program atau jika nilainya penting, memberinya nama yang bermakna bisa membantu pembaca kode untuk memahami tujuannya.
+- Jika nilai variabel tidak boleh diubah selama eksekusi program dan dianggap sebagai nilai tetap yang seharusnya tidak berubah, menggunakan konstanta adalah pilihan yang baik. 
+
+4. Lakukan capture hasil dari Langkah 9 berupa GIF, kemudian jelaskan apa yang telah Anda buat!
+
+![](doc/Praktikum%201.gif)
+
+5. Apa kegunaan method pada Langkah 11 dan 13 dalam lifecyle state ?
+
+- initState() adalah metode khusus dalam Flutter yang dipanggil ketika widget pertama kali dibuat. Pada contoh di atas, initState() digunakan untuk inisialisasi scrollController sebagai ScrollController baru.
+Selanjutnya, diberikan listener pada controller menggunakan ..addListener(() {...}). Listener ini mengatur bahwa setiap kali terjadi perubahan pada controller (dalam hal ini, pergerakan scroll), FocusScope.of(context).requestFocus(FocusNode()) akan dipanggil. Ini bertujuan untuk menyembunyikan keyboard dengan meminta fokus pada FocusNode yang tidak memiliki fokus, efektif menclose keyboard.
+
+- dispose() adalah metode yang dipanggil ketika widget dihapus dari pohon widget. Pada contoh ini, dispose() digunakan untuk melepaskan sumber daya yang digunakan oleh scrollController, menghindari kebocoran memori.
+
+# Praktikum 2 Mengelola Data Layer dengan InheritedWidget dan InheritedNotifier
+## Jawaban Soal Praktikum 2
+2. Jelaskan mana yang dimaksud InheritedWidget pada langkah 1 tersebut! Mengapa yang digunakan InheritedNotifier? 
+- InheritedWidget adalah salah satu konsep kunci dalam Flutter yang memungkinkan berbagi data atau informasi antar widget dalam widget tanpa perlu melewatkan properti secara eksplisit ke setiap widget. 
+```dart
+    dependOnInheritedWidgetOfExactType<PlanProvider>()!.notifier!;
+ ```
+ - Dengan menggunakan InheritedNotifier dan ValueNotifier, PlanProvider memungkinkan widget di bawahnya untuk mendengar dan merespons perubahan pada objek ValueNotifier<Plan>. Semua widget anak yang menggunakan PlanProvider.of(context) akan di-rebuild (dibangun kembali) saat ada perubahan pada nilai ValueNotifier
+
+3. Jelaskan maksud dari method di langkah 3 pada praktikum tersebut! Mengapa dilakukan demikian?
+- completedCount Method:
+Metode ini mengembalikan jumlah tugas yang telah selesai, Itu menggunakan metode where untuk menyaring tugas-tugas yang memiliki properti complete bernilai true.Kemudian, dengan menggunakan length, kita mendapatkan jumlah total tugas yang telah selesai. Dengan cara ini, kita dapat dengan mudah mengetahui berapa banyak tugas yang telah diselesaikan dalam suatu koleksi tugas.
+
+- completenessMessage Method:
+
+Metode ini mengembalikan sebuah string yang memberikan pesan tentang sejauh mana tugas-tugas telah diselesaikan dalam konteks suatu koleksi tugas. String tersebut berisi dua informasi utama: Jumlah tugas yang telah diselesaikan (completedCount). Total jumlah tugas dalam koleksi (tasks.length). Dengan menggunakan informasi ini, pesan memberikan gambaran tentang kemajuan atau kelengkapan dari suatu daftar tugas.
+
+4. Lakukan capture hasil dari Langkah 9 berupa GIF, kemudian jelaskan apa yang telah Anda buat!
+
+![](doc/Praktikum%202.gif)
