@@ -156,6 +156,8 @@ class _PlanScreenState extends State<PlanScreen> {
 
 ![](doc/Praktikum%201.gif)
 
+Pada praktikum ini, saya mendapkan penjelasan bagaimana cara membua atau menambahkan wish list atau schadule, jika schadule tersebut sudah selesai dijalankan maka dapat dilakukan ceklis.
+
 5. Apa kegunaan method pada Langkah 11 dan 13 dalam lifecyle state ?
 
 - initState() adalah metode khusus dalam Flutter yang dipanggil ketika widget pertama kali dibuat. Pada contoh di atas, initState() digunakan untuk inisialisasi scrollController sebagai ScrollController baru.
@@ -183,3 +185,17 @@ Metode ini mengembalikan sebuah string yang memberikan pesan tentang sejauh mana
 4. Lakukan capture hasil dari Langkah 9 berupa GIF, kemudian jelaskan apa yang telah Anda buat!
 
 ![](doc/Praktikum%202.gif)
+
+- pada praktikum ke 2 ini terdapat perbedaan dari praktikum 1 yaitu terdapat massage task list tersbeut sudah selesai (dilakukan ceklis) atau belu, jika sudah maka akan akan message keterangan bertambah 1 untuk yang selesai dari banyaknya list yang dibuat.
+# Praktikum 3: Membuat State di Multiple Screens
+## Jawaban Praktikum 3
+2. Berdasarkan Praktikum 3 yang telah Anda lakukan, jelaskan maksud dari gambar diagram berikut ini!
+![](doc/Soal2.png)
+
+- Gambar diatas mengilustrasikan bagaimana komponen-komponen tersebut saling berhubungan dalam membentuk struktur tampilan dalam aplikasi
+
+3. Lakukan capture hasil dari Langkah 14 berupa GIF, kemudian jelaskan apa yang telah Anda buat!
+
+![](doc/Praktikum%203.gif)
+
+- Menambahakan task baru, lalu melakukan penambahan list dan ceckbox di dalam 1 file list yang telah dibuat, praktikum ke 3 ini menerapkan hasil implementasi di praktikum 1 dan 2.
