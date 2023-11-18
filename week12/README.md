@@ -89,3 +89,31 @@ class _FuturePageState extends State<FuturePage> {
 - Kemudian cobalah akses di browser URI tersebut dengan lengkap seperti ini. Jika menampilkan data JSON, maka Anda telah berhasil. Lakukan capture milik Anda dan tulis di README pada laporan praktikum. Lalu lakukan commit dengan pesan "W12: Soal 2".
 
 ![](doc/soal1.PNG)
+
+## Soal 3
+
+```dart
+ElevatedButton(
+              child: const Text('GO!'),
+              onPressed: () {
+                setState(() {});
+                getData().then((value) {
+                  result = value.body.toString().substring(0, 450);
+                  setState(() {});
+                }).catchError((_) {
+                  result = 'An error occurred';
+                  setState(() {});
+                });
+              },
+            ),
+```
+
+- Jelaskan maksud kode langkah 5 tersebut terkait substring dan catchError!
+
+Substring merujuk pada serangkaian karakter yang diambil dari string yang lebih besar. substring dapat melibatkan dua parameter, yaitu indeks awal dan panjang substring yang diinginkan
+
+catchError dapat digunakan untuk menangani kesalahan (error) yang mungkin terjadi selama eksekusi.
+
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 3"
+
+![](doc/soal3.gif)
