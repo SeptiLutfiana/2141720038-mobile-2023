@@ -71,7 +71,7 @@ class _FuturePageState extends State<FuturePage> {
   }
 }
 ```
-## Soal 2
+### Soal 2
 
 - Carilah judul buku favorit Anda di Google Books, lalu ganti ID buku pada variabel path di kode tersebut. Caranya ambil di URL browser Anda seperti gambar berikut ini.
 
@@ -90,7 +90,7 @@ class _FuturePageState extends State<FuturePage> {
 
 ![](doc/soal1.PNG)
 
-## Soal 3
+### Soal 3
 
 ```dart
 ElevatedButton(
@@ -117,3 +117,56 @@ catchError dapat digunakan untuk menangani kesalahan (error) yang mungkin terjad
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 3"
 
 ![](doc/soal3.gif)
+
+## Praktikum 2: Menggunakan await/async untuk menghindari callbacks
+
+```dart
+Future<int> returnOneAsync() async {
+    await Future.delayed(const Duration(seconds: 3));
+    return 1;
+  }
+
+  Future<int> returnTwoAsync() async {
+    await Future.delayed(const Duration(seconds: 3));
+    return 2;
+  }
+
+  Future<int> returnThreeAsync() async {
+    await Future.delayed(const Duration(seconds: 3));
+    return 3;
+  }
+
+  Future count() async {
+    int total = 0;
+    total = await returnOneAsync();
+    total += await returnTwoAsync();
+    total += await returnThreeAsync();
+    setState(() {
+      result = total.toString();
+    });
+  }
+```
+
+```dart
+ElevatedButton(
+              child: const Text('GO!'),
+              onPressed: () {
+                count();
+              }
+)
+```
+
+### soal 4
+- Jelaskan maksud kode langkah 1 dan 2 tersebut!
+
+returnOneAsync: Ini adalah sebuah fungsi asynchronous yang menggunakan await untuk menunda eksekusi selama 3 detik menggunakan Future.delayed. Setelah menunggu selama 3 detik, fungsi ini mengembalikan nilai 1.
+
+returnTwoAsync: Serupa dengan returnOneAsync, ini adalah fungsi asynchronous lainnya yang menunda eksekusi selama 3 detik dan kemudian mengembalikan nilai 2.
+
+returnThreeAsync: Seperti dua fungsi sebelumnya, ini adalah fungsi asynchronous yang menunda eksekusi selama 3 detik dan mengembalikan nilai 3.
+
+fungsi count ini menggabungkan hasil dari tiga operasi asynchronous dan mengupdate state dalam konteks Flutter setelah perhitungan selesai
+
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 4".
+
+![](doc/Soal4.gif)
