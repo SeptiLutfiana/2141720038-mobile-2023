@@ -202,3 +202,43 @@ Fungsi getNumber membuat Completer, memanggil calculate untuk menghitung nilai, 
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 5".
 
 ![](doc/soal5.gif)
+
+#### langkah 5
+
+```dart
+ Future calculate() async {
+    try {
+      await new Future.delayed(const Duration(seconds: 5));
+      completer.complete(42);
+    } catch (_) {
+      completer.completeError({});
+    }
+  }
+```
+
+#### langkah 6
+
+```dart
+onPressed: () {
+                getNumber().then((value) {
+                  setState(() {
+                    result = value.toString();
+                  });
+                }).catchError((e) {
+                  result = 'An error occurred';
+                });
+}
+```
+### Soal 6
+- Jelaskan maksud perbedaan kode langkah 2 dengan langkah 5-6 tersebut!
+
+langkah 5
+
+ kode ini mencoba menangani exception yang mungkin terjadi selama proses perhitungan. Jika tidak ada exception, nilai 42 akan dianggap sebagai hasil perhitungan yang sukses. Jika ada exception, completer akan diselesaikan dengan error
+
+Langkah 6
+
+ kode ini mengimplementasikan suatu tindakan yang akan diambil ketika tombol ditekan. Jika operasi asynchronous (getNumber()) berhasil, nilai yang diterima akan ditampilkan di UI. Jika terjadi error selama operasi tersebut, pesan kesalahan akan ditampilkan
+
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 6".
+![](doc/soal6.gif)
