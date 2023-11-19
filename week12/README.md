@@ -322,3 +322,40 @@ onPressed: () {
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 9".
 ![](doc/soal9.gif)
 ![](doc/hasil9.PNG)
+
+#### Langkah 4
+```dart
+
+  Future handleError() async {
+    try {
+      await returnError();
+    } catch (error) {
+      setState(() {
+        result = error.toString();
+      });
+    } finally {
+      print('Complete');
+    }
+  }
+```
+### Soal 10
+- Panggil method handleError() tersebut di ElevatedButton, lalu run. Apa hasilnya? Jelaskan perbedaan kode langkah 1 dan 4!
+
+```dart
+onPressed: () {
+                handleError().then((value) {
+                  setState(() {
+                    result = 'Succes';
+                  });
+                }).catchError((onError) {
+                  setState(() {
+                    result = onError.toString();
+                  });
+                }).whenComplete(() => print('Complete'));
+}
+```
+![](doc/soal10.gif)
+![](doc/hasil10.PNG)
+
+- perbedaan kode langkah 1 dan 4
+ kode langkah 1 fungsi returnError() ini, adalah untuk menunggu selama 2 detik dan kemudian melempar suatu exception. Ini adalah pola umum yang digunakan dalam pemrograman asynchronous untuk menangani situasi yang dapat menghasilkan kesalahan atau kegagalan selama eksekusi operasi asynchronous. Pemanggil fungsi ini kemudian dapat menggunakan try-catch untuk menangkap dan menangani exception tersebut jika diperlukan. sedangkan kode langkah 4 menangani hasil dan kesalahan dari eksekusi handleError. Jika eksekusi berakhir tanpa kesalahan, maka variabel result diatur sebagai 'Success'. Jika terjadi kesalahan, variabel result diatur sebagai pesan kesalahan, dan pesan 'Complete' akan dicetak ke konsol.
