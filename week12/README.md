@@ -170,3 +170,35 @@ fungsi count ini menggabungkan hasil dari tiga operasi asynchronous dan mengupda
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 4".
 
 ![](doc/Soal4.gif)
+
+## Praktikum 3: Menggunakan Completer di Future
+```dart
+late Completer completer;
+
+  Future getNumber() {
+    completer = Completer<int>();
+    calculate();
+    return completer.future;
+  }
+
+  Future calculate() async {
+    await Future.delayed(const Duration(seconds: 5));
+    completer.complete(42);
+  }
+```
+
+```dart
+ getNumber().then((value) {
+                  setState(() {
+                    result = value.toString();
+                  });
+                });
+```
+### Soal 5
+- Jelaskan maksud kode langkah 2 tersebut!
+
+Fungsi getNumber membuat Completer, memanggil calculate untuk menghitung nilai, dan mengembalikan future yang akan menyelesaikan dengan nilai tersebut setelah perhitungan selesai. 
+
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 5".
+
+![](doc/soal5.gif)
