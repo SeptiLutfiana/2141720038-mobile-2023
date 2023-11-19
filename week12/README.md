@@ -244,7 +244,7 @@ Langkah 6
 ![](doc/soal6.gif)
 
 ## Praktikum 4: Memanggil Future secara paralel
-
+#### langkah 1
 ```dart
 void returnFG() {
     FutureGroup<int> futureGroup = FutureGroup<int>();
@@ -263,7 +263,7 @@ void returnFG() {
     });
   }
 ```
-
+#### langkah 2
 ```dart
 onPressed: () {
                 returnFG();
@@ -274,3 +274,23 @@ onPressed: () {
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 7
 ![](doc/soal7.gif)
 
+#### langkah 4
+```dart
+ void returnFG() {
+    final futures = Future.wait<int>([
+      returnOneAsync(),
+      returnTwoAsync(),
+      returnThreeAsync(),
+    ]);
+ }
+```
+
+### soal 8
+
+Jelaskan maksud perbedaan kode langkah 1 dan 4!
+
+- langkah 1
+kode ini menggunakan FutureGroup untuk mengelola dan menunggu beberapa Future, dan setelah semuanya selesai, hasilnya dijumlahkan dan ditampilkan dalam UI.
+
+- langkah 4
+fungsi returnFG menggunakan Future.wait untuk menangani dan menunggu hingga ketiga fungsi asynchronous selesai. 
