@@ -294,3 +294,31 @@ kode ini menggunakan FutureGroup untuk mengelola dan menunggu beberapa Future, d
 
 - langkah 4
 fungsi returnFG menggunakan Future.wait untuk menangani dan menunggu hingga ketiga fungsi asynchronous selesai. 
+
+## Praktikum 5: Menangani Respon Error pada Async Code
+
+#### langkah 1
+```dart
+Future returnError() async {
+    await Future.delayed(const Duration(seconds: 2));
+    throw Exception('Something Terrible Happened');
+  }
+```
+#### langkah 2
+```dart
+onPressed: () {
+                returnError().then((value) {
+                  setState(() {
+                    result = 'Succes';
+                  });
+                }).catchError((onError) {
+                  setState(() {
+                    result = onError.toString();
+                  });
+                }).whenComplete(() => print('Complete'));
+}
+```
+### Soal 9
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 9".
+![](doc/soal9.gif)
+![](doc/hasil9.PNG)
