@@ -404,3 +404,9 @@ iya mendapatkan koordinat GPS, hal ini dikarenakan sudah dilakukan deklrasi fung
 ![](doc/soal13.gif)
 
 - Seperti yang Anda lihat, menggunakan FutureBuilder lebih efisien, clean, dan reactive dengan Future bersama UI.
+
+### Soal 14
+- Apakah ada perbedaan UI dengan langkah sebelumnya? Mengapa demikian?
+tidak, tidak ada perubahan karena disini hanya menambahkan kondisi jika eror akan muncul warning. untuk prosess loaading tetap sama hasilnya.
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu -lakukan commit dengan pesan "W12: Soal 14".
+![](doc/soal14.gif)
