@@ -394,3 +394,13 @@ iya mendapatkan koordinat GPS, hal ini dikarenakan sudah dilakukan deklrasi fung
 
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 12".
 ![](doc/soal12.gif)
+
+## Praktikum 7: Manajemen Future dengan FutureBuilder
+### Soal 13
+- Apakah ada perbedaan UI dengan praktikum sebelumnya? Mengapa demikian?
+   tidak, hal ini karena sama-sama menampilkan informasi lokasi geografis saat ini dengan menggunakan FutureBuilder untuk mengelola proses asynchronous untuk mendapatkan lokasi.
+
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 13".
+![](doc/soal13.gif)
+
+- Seperti yang Anda lihat, menggunakan FutureBuilder lebih efisien, clean, dan reactive dengan Future bersama UI.
