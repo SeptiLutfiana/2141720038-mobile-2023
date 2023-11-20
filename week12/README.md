@@ -373,5 +373,24 @@ Widget build(BuildContext context) {
   }
 
 ```
+#### langkah 6
+```dart
+      home: LocationScreen(),
+```
+#### langkah 7-run
+
+![](doc/soal12-1.jpeg)
 
 
+
+### soal 12
+
+- Jika Anda tidak melihat animasi loading tampil, kemungkinan itu berjalan sangat cepat. Tambahkan delay pada method getPosition() dengan kode await Future.delayed(const Duration(seconds: 3));
+
+- Apakah Anda mendapatkan koordinat GPS ketika run di browser? Mengapa demikian?  
+iya mendapatkan koordinat GPS, hal ini dikarenakan sudah dilakukan deklrasi fungsi getPosition(), sehingga dapat mendapatkan koordinat  GPS
+
+![](doc/soal12-2.PNG)
+
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 12".
+![](doc/soal12.gif)
