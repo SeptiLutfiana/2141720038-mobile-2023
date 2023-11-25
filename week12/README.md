@@ -436,3 +436,14 @@ Saat kita mengklik button maka akan berganti warna sesuai button yang di klik, j
 - Gantilah 3 warna pada langkah 5 dengan warna favorit Anda!
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 16"
 ![](doc/soal16.gif)
+
+
+## Praktikum 9: Memanfaatkan async/await dengan Widget Dialog
+### Soal 17
+- Cobalah klik setiap button, apa yang terjadi ? Mengapa demikian ?
+
+Saat kita mengklik button maka akan berganti warna sesuai button yang di klik, jika butten red (tampilan akan berwarna merah), jika button blue (tampilan akan berwarna blue), jika button green (tampilan akan berwarna green). Hal ini terjadi karena kita menerapkan fungsi  _showColorDialog() untuk menampikan pesan dialog pilihan warna.
+
+- Gantilah 3 warna pada langkah 3 dengan warna favorit Anda!
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 17".
+![](doc/soal17.gif)
