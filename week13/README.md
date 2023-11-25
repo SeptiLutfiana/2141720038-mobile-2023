@@ -55,3 +55,14 @@ class ColorStream {
 
 ```
 - Lakukan commit hasil jawaban Soal 2 dengan pesan "W13: Jawaban Soal 2"
+
+### Soal 3
+- Jelaskan fungsi keyword yield* pada kode tersebut!
+
+Keyword yield* digunakan untuk menggabungkan atau "melempar" elemen dari satu stream ke dalam stream lain.
+
+- Apa maksud isi perintah kode tersebut?
+
+sebuah stream yang mengeluarkan elemen-elemen warna secara periodik setiap detik, dengan urutan yang diulang dari colors.
+
+- Lakukan commit hasil jawaban Soal 3 dengan pesan "W13: Jawaban Soal 3"
