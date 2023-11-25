@@ -72,3 +72,10 @@ sebuah stream yang mengeluarkan elemen-elemen warna secara periodik setiap detik
 ![](doc/W13-soal4.gif)
 
 - Lakukan commit hasil jawaban Soal 4 dengan pesan "W13: Jawaban Soal 4"
+
+### Soal 5
+- Jelaskan perbedaan menggunakan listen dan await for (langkah 9) !
+
+Metode listen biasanya digunakan ketika kita ingin mengamati (observe) data yang masuk ke dalam stream secara terus-menerus tanpa memutuskan hubungan dengan stream. Sedangkan await for berguna ketika kita ingin memproses setiap data yang ada di dalam stream secara berurutan dan menunggu hingga semua data di stream telah diproses sebelum melanjutkan eksekusi kode selanjutnya
+
+- Lakukan commit hasil jawaban Soal 5 dengan pesan "W13: Jawaban Soal 5"
