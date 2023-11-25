@@ -410,3 +410,29 @@ iya mendapatkan koordinat GPS, hal ini dikarenakan sudah dilakukan deklrasi fung
 tidak, tidak ada perubahan karena disini hanya menambahkan kondisi jika eror akan muncul warning. untuk prosess loaading tetap sama hasilnya.
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu -lakukan commit dengan pesan "W12: Soal 14".
 ![](doc/soal14.gif)
+
+## Praktikum 8: Navigation route dengan Future Function
+### Soal 15
+- Tambahkan nama panggilan Anda pada tiap properti title sebagai identitas pekerjaan Anda.
+- Silakan ganti dengan warna tema favorit Anda.
+```dart
+return Scaffold(
+      backgroundColor: color,
+      appBar: AppBar( title: const Text("Septi-Navigation First Screen"),
+      ),
+      body: Center(child: ElevatedButton(child: const Text('Change Color'),
+      onPressed: () {
+        _navigateAndGetColor(context);
+      }),
+      ),
+    );
+```
+
+### Soal 16
+
+- Cobalah klik setiap button, apa yang terjadi ? Mengapa demikian ?
+
+Saat kita mengklik button maka akan berganti warna sesuai button yang di klik, jika butten red (tampilan akan berwarna merah), jika button blue (tampilan akan berwarna blue), jika button green (tampilan akan berwarna green). Hal ini terjadi karena kita menerapkan fungsi Navigator.pop.
+- Gantilah 3 warna pada langkah 5 dengan warna favorit Anda!
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 16"
+![](doc/soal16.gif)
