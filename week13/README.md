@@ -260,7 +260,7 @@ StreamBuilder digunakan untuk membangun UI berdasarkan data yang diterima dari n
 ## Praktikum 7: BLoC Pattern
 ### Soal 13
 - Jelaskan maksud praktikum ini ! Dimanakah letak konsep pola BLoC-nya ?
-
+Praktikum ini memperkenalkan konsep BLoC (Business Logic Component) pada Flutter dengan menerapkan pola arsitektur BLoC. Konsep BLoC terletak pada kelas RandomNUmberBloc yang bertindak sebagai komponen logika bisnis. Dua StreamController digunakan untuk mengelola input dan output, yaitu _generateRandomController sebagai sink untuk menerima input dan _randomNumberController sebagai stream untuk mengirimkan output. Ketika tombol ditekan, generateRandom menerima input, dan melalui proses logika bisnis (pembuatan angka acak), hasilnya dikirimkan ke randomNumber untuk kemudian diteruskan ke antarmuka pengguna menggunakan StreamBuilder.
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
-
+![](doc/W13-soal13.gif)
 - Lalu lakukan commit dengan pesan "W13: Jawaban Soal 13".
