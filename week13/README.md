@@ -256,3 +256,11 @@ StreamBuilder digunakan untuk membangun UI berdasarkan data yang diterima dari n
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
 ![](doc/W13-Soal12.gif)
 - Lalu lakukan commit dengan pesan "W13: Jawaban Soal 12".
+
+## Praktikum 7: BLoC Pattern
+### Soal 13
+- Jelaskan maksud praktikum ini ! Dimanakah letak konsep pola BLoC-nya ?
+
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+
+- Lalu lakukan commit dengan pesan "W13: Jawaban Soal 13".
