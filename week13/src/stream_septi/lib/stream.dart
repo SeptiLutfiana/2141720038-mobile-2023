@@ -6,11 +6,14 @@ class NumberStream {
   void addNumberToSink(int newNumber) {
     controller.sink.add(newNumber);
   }
-}
 
-close() {
-  var controller;
-  controller.close();
+  close() {
+    controller.close();
+  }
+
+  addError() {
+    controller.sink.addError('Eror');
+  }
 }
 
 class ColorStream {

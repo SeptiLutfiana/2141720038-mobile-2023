@@ -85,3 +85,34 @@ Kode pada langkah 8 menginisialisasi objek NumberStream dan StreamController, da
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
 ![](doc/W13-soal6.gif)
 - Lalu lakukan commit dengan pesan "W13: Jawaban Soal 6".
+
+### Soal 7
+- Jelaskan maksud kode langkah 13 sampai 15 tersebut!
+```dart
+addError() {
+    controller.sink.addError('Eror');
+  }
+```
+
+
+```dart
+ stream.listen((event) {
+      setState(() {
+        lastNumber = event;
+      });
+    }).onError((error) {
+      setState(() {
+        lastNumber = -1;
+      });
+    });
+```
+
+```dart
+numberStream.addError();
+```
+Dengan menggunakan metode onError, kita dapat menangani kesalahan yang terjadi dalam stream dengan melakukan tindakan yang sesuai. Dalam contoh tersebut, jika terjadi kesalahan, nilai lastNumber akan diubah menjadi -1 dan tampilan akan diperbarui melalui setState().
+
+
+- Kembalikan kode seperti semula pada Langkah 15, comment addError() agar Anda dapat melanjutkan ke praktikum 3 berikutnya.
+
+- Lalu lakukan commit dengan pesan "W13: Jawaban Soal 7"
