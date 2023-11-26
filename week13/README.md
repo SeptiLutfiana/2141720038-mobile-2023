@@ -79,3 +79,9 @@ sebuah stream yang mengeluarkan elemen-elemen warna secara periodik setiap detik
 Metode listen biasanya digunakan ketika kita ingin mengamati (observe) data yang masuk ke dalam stream secara terus-menerus tanpa memutuskan hubungan dengan stream. Sedangkan await for berguna ketika kita ingin memproses setiap data yang ada di dalam stream secara berurutan dan menunggu hingga semua data di stream telah diproses sebelum melanjutkan eksekusi kode selanjutnya
 
 - Lakukan commit hasil jawaban Soal 5 dengan pesan "W13: Jawaban Soal 5"
+### Soal 6
+- Jelaskan maksud kode langkah 8 dan 10 tersebut!
+Kode pada langkah 8 menginisialisasi objek NumberStream dan StreamController, dan kemudian mendengarkan perubahan data di dalam stream menggunakan metode listen. Setiap kali ada data baru yang masuk, nilai lastNumber diperbarui dan tampilan diperbarui menggunakan setState. Sedangkan pada langkah 10 fungsi addRandomNumber() yang berfungsi untuk menambahkan bilangan acak ke dalam stream
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+![](doc/W13-soal6.gif)
+- Lalu lakukan commit dengan pesan "W13: Jawaban Soal 6".
