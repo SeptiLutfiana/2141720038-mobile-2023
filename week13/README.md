@@ -171,3 +171,43 @@ Dengan menggunakan metode transform() pada stream dan mendaftarkan callback meng
 
 ![](doc/W13-soal8.gif)
 - Lalu lakukan commit dengan pesan "W13: Jawaban Soal 8".
+
+## Praktikum 4: Subscribe ke stream events
+
+### Soal 9
+- Jelaskan maksud kode langkah 2, 6 dan 8 tersebut!
+```dart 
+ subscription = stream.listen((event) {
+      setState(() {
+        lastNumber = event;
+      });
+    });
+```
+metode `listen()` dipanggil pada objek `stream` untuk mendaftarkan _listener_ yang akan dipanggil setiap kali ada data baru yang tersedia di dalam stream. _Listener_ ini mengambil nilai data (`event`) yang masuk ke dalam stream dan memperbarui `lastNumber` dengan nilai tersebut melalui `setState()`. Dengan mendaftarkan _listener_ ini, kita dapat merespons data yang masuk ke dalam stream.
+
+```dart
+    subscription.cancel();
+```
+jika kita ingin menghentikan penerimaan data dari stream, kita dapat membatalkan _subscription_ dengan memanggil metode `cancel()` pada objek `subscription`. Ini akan menghentikan pemanggilan _listener_ pada stream.
+
+```dart
+void addRandomNumber() {
+    Random random = Random();
+    int myNum = random.nextInt(10);
+    if (!numberStreamController.isClosed) {
+      numberStream.addNumberToSink(myNum);
+    } else {
+      setState(() {
+        lastNumber = -1;
+      });
+    }
+}
+```
+menambahkan angka acak ke dalam stream dengan memeriksa keadaan stream. Jika stream telah ditutup, lastNumber diperbarui dengan -1
+
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+![](doc/hasil-8.PNG)
+
+![](doc/W13-soal9.gif)
+
+- Lalu lakukan commit dengan pesan "W13: Jawaban Soal 9".
