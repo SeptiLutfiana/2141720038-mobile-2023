@@ -227,3 +227,32 @@ hal ini bisa terjadi karena menerapkan .asBroadcastStream(), hal ini karena dapa
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
 ![](doc/W13-SOAL11.gif)
 - Lalu lakukan commit dengan pesan "W13: Jawaban Soal 10,11".
+
+## Praktikum 6: StreamBuilder
+### Soal 12
+- Jelaskan maksud kode pada langkah 3 dan 7 !
+langkah 3
+
+Fungsi tersebut menggunakan kelas Random untuk menghasilkan bilangan acak antara 0 dan 9 menggunakan metode nextInt(10). Kemudian, bilangan acak tersebut dikembalikan sebagai nilai stream menggunakan pernyataan return.
+
+langkah 7
+
+StreamBuilder digunakan untuk membangun UI berdasarkan data yang diterima dari numberStream
+
+- Properti stream pada StreamBuilder diatur dengan numberStream, yang merupakan stream yang ingin Anda pantau perubahannya.
+
+- Properti initialData diatur dengan nilai awal 0. Nilai ini akan digunakan ketika stream belum mengirimkan data.
+
+- Properti builder berisi fungsi yang akan dipanggil setiap kali terdapat perubahan pada stream. Fungsi ini menerima dua parameter:
+    context: Konteks dari widget.
+    snapshot: Objek AsyncSnapshot yang berisi informasi tentang status stream dan data yang diterima.
+- Di dalam fungsi builder, pertama-tama kita melakukan pengecekan terhadap snapshot.hasError. Jika terdapat error pada stream, maka pesan       "!Error" akan dicetak ke konsol.
+
+- Selanjutnya, kita melakukan pengecekan terhadap snapshot.hasData. Jika terdapat data yang diterima dari stream, maka kita mengembalikan widget Center dengan child Text. Tekst tersebut akan menampilkan data yang diterima dari stream menggunakan snapshot.data.toString().
+
+- Jika snapshot.hasData bernilai false, artinya belum ada data yang diterima dari stream, maka kita mengembalikan SizedBox.shrink(), yang merupakan widget kosong.
+
+
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+![](doc/W13-Soal12.gif)
+- Lalu lakukan commit dengan pesan "W13: Jawaban Soal 12".
