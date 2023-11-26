@@ -211,3 +211,19 @@ menambahkan angka acak ke dalam stream dengan memeriksa keadaan stream. Jika str
 ![](doc/W13-soal9.gif)
 
 - Lalu lakukan commit dengan pesan "W13: Jawaban Soal 9".
+
+## Praktikum 5: Multiple stream subscriptions
+- hasil run
+![](doc/hasilrun-10.jpg)
+
+### soal 10
+- Jelaskan mengapa error itu bisa terjadi ?
+hal ini terjadi karena terdapat deklarasi fungsi listen() sebanyak dua kali atau sebelumnya sudah terdapat fungsi listen(). Dan juga setiap stream hanya dapat memiliki satu listener aktif pada suatu waktu.
+
+### Soal 11
+- Jelaskan mengapa hal itu bisa terjadi ?
+hal ini bisa terjadi karena menerapkan .asBroadcastStream(), hal ini karena dapat memungkinkan banyak listener pada stream secara independen.
+
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+![](doc/W13-SOAL11.gif)
+- Lalu lakukan commit dengan pesan "W13: Jawaban Soal 10,11".
